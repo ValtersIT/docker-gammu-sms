@@ -76,7 +76,8 @@ Or in Docker terminal:<br>
 <code> gammu-smsd-inject --config=/etc/gammu-smsdrc TEXT 371222222 -unicode -textutf8 Message</code>
 <br>
 <h1><b>For additional information and also tutorial visit:</b></h1>
-<a href="https://www.valters.eu/how-to-send-sms-using-3g-4g-dongle-and-dockerl"><b><h3>Valters.eu - Blog</h3><b></a>
-<a href="https://hub.docker.com/r/valterseu/gammu-sms"><b><h3>Docker Image</h3><b></a>
-<a href="https://www.youtube.com/@valters_eu"><b><h3>Youtube Video How TO Guide</h3><b></a>
-<a href="http://twitter.com/valters_eu"><b><h3>For more cool stuff follow me on Twitter</h3><b></a>
+
+<b><h3>Valters.eu - Blog</h3><b>https://www.valters.eu/how-to-send-sms-using-3g-4g-dongle-and-dockerl
+<b><h3>Docker Image</h3><b>https://hub.docker.com/r/valterseu/gammu-sms
+<b><h3>Youtube Video How TO Guide</h3><b>https://www.youtube.com/@valters_eu
+<b><h3>For more cool stuff follow me on Twitter</h3><b>http://twitter.com/valters_eu

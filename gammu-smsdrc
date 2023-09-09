@@ -1,0 +1,67 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+# Please configure this
+port = /dev/ttyUSB1
+connection = AT
+speed = 9600
+
+## tHE Default config you will find at the end of this file ##
+# How often to reset the device if it is stuck
+#ResetFrequency = 11
+# A hard reset, so that 3G Doungle doesn't get stuck
+#HardResetFrequency = 20
+# How often to check for incoming TEXT Messages
+#ReceiveFrequency = 10
+# How often to check for GSM connection ( Suggested every 30 minutes )
+#StatusFrequency = 30
+# How often to check outgoing SMS if there are none stuck? ( Suggested every 15 minutes )
+#CommTimeout = 5
+# How long to wait for a mobile carrier to answer if an SMS is sent? By default it is 30 seconds
+#SendTimeout = 3
+# If set to 1 then Doungle will go into standby if no activity ( Suggested to put leave as is or set 0 )
+#LoopSleep = 0
+# How long does to wait for a large text SMS to be sent Suggested 6 seconds
+#MultipartTimeout = 6
+# Reject incoming phone calls to the SIM
+#HangupCalls = 1
+# Check if the SIM card wants a pin
+#CheckSecurity = 1
+# How many times to retry resending an SMS if something goes wrong?
+#MaxRetries = 1
+# After how many seconds to retry sending failed SMS Messages?
+#RetryTimeout = 5
+
+
+
+[smsd]
+
+# MySQL Connection
+service = sql
+driver = native_mysql
+host = MySQL_HOST
+user = MySQL_USER
+password = MySQL_USER_PASSWORD
+database = MySQL_DB_NAME
+
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+OutboxFormat = unicode
+TransmitFormat = unicode
+PIN = 0000
+RetryTimeout = 5
+MultipartTimeout = 5
+ResetFrequency = 30
+HardResetFrequency = 60
+DeliveryReport = sms
+PhoneID = first
+logfile = /var/log/sms_log
+debuglevel = 255
+StatusFrequency = 0
+CommTimeout = 7
+SendTimeout = 10
+HangupCalls = 1
+LoopSleep = 0
+CheckSecurity = 0

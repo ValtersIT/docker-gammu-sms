@@ -79,5 +79,5 @@ Or in Docker terminal:<br>
 
 <b><h3>Valters.eu - Blog</h3><b>https://www.valters.eu/how-to-send-sms-using-3g-4g-dongle-and-dockerl
 <b><h3>Docker Image</h3><b>https://hub.docker.com/r/valterseu/gammu-sms
-<b><h3>Youtube Video How TO Guide</h3><b>https://www.youtube.com/@valters_eu
+<b><h3>Youtube Video How TO Guide</h3><b> https://www.youtube.com/watch?v=j0jf_iBtvRc
 <b><h3>For more cool stuff follow me on Twitter</h3><b>http://twitter.com/valters_eu
